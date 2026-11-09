@@ -1,0 +1,28 @@
+site_name: Knowledge Base - Nguyễn Thế Hiển
+site_description: Ghi chú kiến thức và kinh nghiệm làm việc
+site_url: https://hiencrab.github.io/knowledge-base/
+repo_url: https://github.com/hiencrab/knowledge-base
+theme:
+  name: material
+  language: vi
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+nav:
+  - Trang chủ: index.md
+  - Salesforce: salesforce/index.md
+  - SQL: sql/index.md
+  - IoT: iot/index.md
+  - Hệ thống nội bộ: he-thong-noi-bo/index.md
+  - Mẫu ghi chú: template.md
