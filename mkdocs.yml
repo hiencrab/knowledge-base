@@ -1,11 +1,12 @@
-site_name: Knowledge Base - Nguyễn Thế Hiển
-site_description: Ghi chú kiến thức và kinh nghiệm làm việc
+site_name: IT Knowledge Base
+site_description: Tổng hợp kiến thức Network, System, Helpdesk
 site_url: https://hiencrab.github.io/knowledge-base/
 repo_url: https://github.com/hiencrab/knowledge-base
 theme:
   name: material
   language: vi
   features:
+    - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.suggest
@@ -21,8 +22,18 @@ markdown_extensions:
   - pymdownx.superfences
 nav:
   - Trang chủ: index.md
-  - Salesforce: salesforce/index.md
-  - SQL: sql/index.md
-  - IoT: iot/index.md
-  - Hệ thống nội bộ: he-thong-noi-bo/index.md
+  - Network:
+      - network/index.md
+      - Mô hình OSI và TCP/IP: network/osi-tcpip.md
+      - Chia subnet: network/subnetting.md
+      - Xử lý sự cố mạng: network/troubleshooting.md
+  - System:
+      - system/index.md
+      - Lệnh Linux thường dùng: system/linux-commands.md
+      - Windows và Active Directory: system/windows-ad.md
+      - Sao lưu và khôi phục: system/backup.md
+  - Helpdesk:
+      - helpdesk/index.md
+      - Quy trình xử lý ticket: helpdesk/ticket-process.md
+      - Checklist sự cố thường gặp: helpdesk/common-issues.md
   - Mẫu ghi chú: template.md
