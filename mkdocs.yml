@@ -23,9 +23,7 @@ theme:
         icon: material/weather-sunny
         name: Chuyển sang chế độ sáng
   features:
-    - navigation.instant
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - search.suggest
